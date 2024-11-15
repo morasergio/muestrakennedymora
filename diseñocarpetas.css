@@ -1,0 +1,36 @@
+/* Contenedor principal de la galería */
+body{
+    background: #c742dfcd;
+}
+
+
+
+
+.hover-galeria {
+  position: -webkit-sticky;
+  width: 10%;
+  height: 10%;
+  top: -100;
+  left: 60;
+  
+}
+
+ Escala al hacer hover 
+.hover-galeria:hover {
+  transform: scale(1.05); /* Incremento de tamaño en hover */
+}
+
+/* Imágenes dentro de la galería */
+.hover-galeria img {
+  width: 200px;
+  height: auto;
+  border-radius: 18px;
+  transition: transform 0.5s cubic-bezier(0.25, 1.5, 0.5, 1);
+  box-shadow 0.5s ease;
+}
+
+/* Efecto hover para imágenes */
+.hover-galeria img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 4px 8px rgba(210, 228, 7, 0.871);
+}

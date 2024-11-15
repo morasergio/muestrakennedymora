@@ -1,0 +1,5 @@
+var num1 = parseInt(prompt("Ingrese el primer numero"))
+var num2 = parseInt(prompt("Ingrese el segundo numero"))
+var num3 = parseInt(prompt("Ingrese el tercer numero"))
+var numemayor = Math.max(num1, num2, num3)
+alert("el numero mas grnde es el: "+nummayor)

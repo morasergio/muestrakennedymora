@@ -1,0 +1,359 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Berlin Sans FB Demi';
+    overflow-x: hidden;
+}
+.contenedor{
+ padding: 60px 0px;
+ width: 90%;
+ max-width: 1000px;
+ margin: auto;
+ overflow: hidden;  
+}
+.titulo{
+    color: #54027b;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/*header*/
+header{
+    width: 100%;
+    height: 600px;
+    background: hsla(294, 86%, 17%, 0.349);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, hsla(319, 80%, 96%, 0.521), hsla(305, 96%, 29%, 0.593), hsla(291, 94%, 37%, 0.979), hsla(310, 89%, 46%, 0.247)), url(../E:\proyecto mora/portada.jpg)  /* Chrome 10-25, Safari 5.1-6 */
+: linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */: ;
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+
+/*texto del principio, no me funciona*/
+.textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-heder h1{
+    height: 500px;
+      background: #a7049c;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.textos-heder h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+/*about us*/
+.contenedor-sobre-mi{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-about-us{
+    width: 48%;
+}
+.sobre-mi .contenido-textos{
+    width: 48%;
+}
+.contenidos-textos h3{
+  margin-bottom: 15px;
+}
+.contenidos-textos h3 span{
+  background: #cf0cbfb5;
+  color: #000304;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 rgba(0,0, 0, .5);
+margin-right: 5px;
+}
+.contenido-textos p{
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+/*portafolio*/
+.portafolio{
+  background: #c8c8c87d;
+}
+.galeria-port{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.imagen-port{
+  width: 24%;
+  margin-bottom: 10px;
+  overflow: visible;
+  position: relative;
+  cursor: zoom-out;
+  box-shadow: 0 0 6px o rgba(0,0, 0, .5);
+}
+.imagen-port img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/*lo que hace que se mueva el cuadrado rosa*/
+.hover-galeria{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+ transform: scale(1);
+  background: hsla(314, 84%, 57%, 0.43);
+  transition: transform .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hover-galeria img{
+  width: 50px;
+}
+.hover-galeria p{
+  color: #fff;
+}
+.imagen-port:hover .hover-galeria{
+  transform: scale(0);
+}
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+}
+.cards .card{
+  background: #af52dd83;
+  display: flex;
+  width: 46%;
+  height: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0,0.8);
+}
+.card img{
+  width: 50%;
+  height: 175px;
+  object-fit: cover;
+  border: 5px solid#57057dec;
+  border-radius: 30%;
+  display: block;
+}
+.cards .card .contenido-texto-card{
+  text-align:center ;
+  width: 80%;
+  color: #dc9a17;
+}
+.cards .card .contenido-texto-card p{
+  text-align: center;
+  font-weight: 900;
+  padding-top: 15px;
+}
+/*servicios*/
+.about-services{
+  background: #f2f2f2;
+  padding-bottom: 30px;
+}
+.servicio-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.servicio-ind{
+  width: 28%;
+  text-align: center;
+}
+.servicio-ind img{
+  width: 90%;
+}
+.servicio-ind h3{
+  margin: 10px 0;
+}
+.servicio-ind p{
+  font-weight: 300;
+  text-align: justify;
+}
+/*footer*/
+footer{
+ background: #a29ea2bd;
+  padding: 23px 0 50px;
+  margin: auto;
+overflow: hidden;  
+}
+.contenedor-footer{
+  display: flex;
+  width: 40;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+border-bottom: 2px solid #ccc;
+}
+.content-foo{
+  text-align: center;
+}
+.content-foo h4{
+  color: #fff;
+  border-bottom: #614106;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+}
+.content-foo h4 p{
+  color: #ccc;
+}
+.titulo-final{
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
+
+}
+
+/*intento de ola*/
+.wave {
+    position: absolute;
+    left: -180px;
+    bottom: 0;-
+    width: 200px;
+    height: 200px;
+    width: 100%;
+    border-radius: 50%;
+    background:hsla(0, 0%, 0%, 0.774);
+    width: 2402px;
+    height: 427px;
+    background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
+    animation: 5s wave ease-in-out infinite alternate;
+  }
+  .wave.a {
+    background-position: 0 -854px;
+  }
+  .wave.b {
+    background-position: 0 -427px;
+    animation-delay: .6s;
+  }
+  .wave.c {
+    background-position: 0 0;
+    animation-delay: 1.2s;
+  }
+  .container {
+    position: absolute;
+  }
+  @keyframes wave {
+    0% {
+      transform: translate(0 , 0);
+    }
+    50% {
+      transform: translate(-80px, 30px);
+    }
+    100% {
+      transform: translate(160px, -60px);
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .galeria-port, .cards, .servicio-cont, .contenedor-footer {
+      flex-direction: column;
+      
+
+align-items: center;
+  }
+
+  
+  
+
+
+.imagen-port, .card, .servicio-ind, .content-foo {
+      flex: 1 1 100%;
+      
+ 
+max-width: 90%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  
+ 
+.imagen-about-us {
+      
+      w
+
+     
+width: 80%;
+  }
+
+  
+  }
+
+  h
+
+  }
+
+ 
+
+  }
+
+header h1, header h2 {
+      font-size: 1.5rem;
+  }
+
+  
+  }
+
+ 
+.contenedor {
+      width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  
+ 
+header h1, header h2 {
+      font-size: 1.2rem;
+  }
+
+  
+  }
+
+  .
+
+ 
+.imagen-about-us {
+      width: 100%;
+  }
+
+  .card, .servicio-ind, .content-foo {
+      padding: 10px;
+  }
+
+  
+  }
+
+ 
+.contenedor-footer {
+      
+   
+
+ 
+flex-direction: column;
+  }
+}
+
+  }
+}
+   
